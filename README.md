@@ -107,7 +107,6 @@ DJANGO_DEBUG=True
 - Python 3.x  
 - Environnement virtuel Python (venv)
 
-
 ### 6.2 Installation des dépendances
 
 Installer les dépendances du projet à l’aide du fichier `requirements.txt` :
@@ -115,7 +114,7 @@ Installer les dépendances du projet à l’aide du fichier `requirements.txt` :
 ```bash
 pip install -r requirements.txt
 
-
+```
 ### 6.3 Migrations de la base de données
 
 Appliquer les migrations Django afin de créer et mettre à jour le schéma de la base de données :
@@ -123,6 +122,7 @@ Appliquer les migrations Django afin de créer et mettre à jour le schéma de l
 ```bash
 python manage.py migrate
 
+```
 ### 6.4 Lancement du serveur de développement
 
 Démarrer le serveur de développement Django :
@@ -130,7 +130,7 @@ Démarrer le serveur de développement Django :
 ```bash
 python manage.py runserver
 
-
+```
 ## 7. Tests
 
 Les tests inclus dans le cadre de ce backend concernent principalement :
