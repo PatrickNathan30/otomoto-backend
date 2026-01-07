@@ -99,7 +99,7 @@ Exemple :
 DJANGO_SECRET_KEY=your-secret-key
 DJANGO_DEBUG=True
 
-
+```
 ## 6. Installation et exécution locale
 
 ### 6.1 Prérequis
