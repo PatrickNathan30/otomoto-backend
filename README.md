@@ -102,51 +102,70 @@ Exemple :
 DJANGO_SECRET_KEY=your-secret-key
 DJANGO_DEBUG=True
 
-##**6. Installation et exécution locale**
-##**6.1 Prérequis**
-  Python 3.x
-  Virtual environment (venv)
+## 6. Installation et exécution locale
 
-6.2 Installation
-  pip install -r requirements.txt
+### 6.1 Prérequis
 
-6.3 Migrations
-  python manage.py migrate
-
-6.4 Lancement du serveur
-  python manage.py runserver
-  Le backend est accessible à l’adresse: http://127.0.0.1:8000/
-
-7. Tests
-Les tests inclus concernent principalement :
-
-  la validation des modèles,
-  
-  les endpoints API,
-  
-  les règles de permissions.
-
-Les tests de performance, OWASP et end-to-end globaux ne font pas partie du périmètre direct du stage backend.
+- Python 3.x  
+- Environnement virtuel Python (venv)
 
 
-8. Contexte du projet
-Ce backend a été développé dans un contexte de MVP, avec pour objectifs :
+### 6.2 Installation des dépendances
 
-  appliquer les bonnes pratiques Django REST,
-  
-  concevoir une architecture modulaire et maintenable,
-  
-  sécuriser les données sensibles,
-  
-  fournir une base solide pour les évolutions post-MVP.
+Installer les dépendances du projet à l’aide du fichier `requirements.txt` :
 
-9. Limites connues
-  Base de données SQLite (usage développement)
-  
-  Pas de déploiement production inclus
-  
-  Blockchain non déployée (logique préparatoire uniquement)
+```bash
+pip install -r requirements.txt
 
-Auteur
-Patrick Nathan
+
+### 6.3 Migrations de la base de données
+
+Appliquer les migrations Django afin de créer et mettre à jour le schéma de la base de données :
+
+```bash
+python manage.py migrate
+
+### 6.4 Lancement du serveur de développement
+
+Démarrer le serveur de développement Django :
+
+```bash
+python manage.py runserver
+
+
+## 7. Tests
+
+Les tests inclus dans le cadre de ce backend concernent principalement :
+
+- la validation des modèles,
+- les endpoints de l’API REST,
+- les règles de permissions et de contrôle d’accès.
+
+Les tests de performance, les audits de sécurité OWASP ainsi que les tests end-to-end globaux ne faisaient pas partie du périmètre direct du stage backend.
+
+
+
+## 8. Contexte du projet
+
+Ce backend a été développé dans un **contexte de MVP (Minimum Viable Product)**, avec pour objectifs principaux :
+
+- appliquer les bonnes pratiques de développement avec Django REST Framework,
+- concevoir une architecture modulaire, claire et maintenable,
+- sécuriser les données sensibles et les paramètres de configuration,
+- fournir une base technique solide pour les évolutions post-MVP.
+
+
+## 9. Limites connues
+
+Les limites actuelles du backend sont les suivantes :
+
+- utilisation de **SQLite** comme base de données (environnement de développement),
+- absence de déploiement en environnement de production,
+- blockchain non déployée (logique préparatoire uniquement côté backend).
+
+
+## 10. Auteur
+
+**Patrick Nathan**  
 Stagiaire Backend – Projet OTOMOTO
+
