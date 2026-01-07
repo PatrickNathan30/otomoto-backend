@@ -94,9 +94,10 @@ Les paramètres sensibles sont gérés via des variables d’environnement.
 Un fichier d’exemple est fourni :
 
 Exemple :
+
 ```env
 DJANGO_SECRET_KEY=your-secret-key
-DJANGO_DEBUG=True ```
+DJANGO_DEBUG=True
 
 
 ## 6. Installation et exécution locale
