@@ -33,8 +33,6 @@ Le backend couvre exclusivement les fonctionnalités suivantes :
 - **SQLite** (environnement de développement)
 - **python-dotenv** pour la gestion des variables d’environnement
 
----
-
 ### 3.2 Structure du projet
 
 otomoto_backend/
@@ -68,8 +66,6 @@ Il inclut :
 - vues API (`views.py`)
 - migrations versionnées
 
----
-
 ### 4.2 Traçabilité des pièces
 
 Une logique de **traçabilité par chaînage de hash** a été implémentée afin de :
@@ -100,7 +96,8 @@ Un fichier d’exemple est fourni :
 Exemple :
 ```env
 DJANGO_SECRET_KEY=your-secret-key
-DJANGO_DEBUG=True
+DJANGO_DEBUG=True ```
+
 
 ## 6. Installation et exécution locale
 
