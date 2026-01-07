@@ -11,8 +11,6 @@ Le backend a été conçu pour fournir :
 - un système de traçabilité des pièces,
 - un module de paiement interne (wallet / fintech).
 
----
-
 ## 2. Périmètre du backend
 
 Le backend couvre exclusivement les fonctionnalités suivantes :
@@ -23,9 +21,7 @@ Le backend couvre exclusivement les fonctionnalités suivantes :
 - Module de paiement interne (OtoPay)
 - Exposition des fonctionnalités via une API REST
 
-⚠️ **Le frontend, la blockchain déployée, les tableaux de bord PowerBI et les environnements de production ne font pas partie de ce dépôt.**
-
----
+**Le frontend, la blockchain déployée, les tableaux de bord PowerBI et les environnements de production ne font pas partie de ce dépôt.**
 
 ## 3. Architecture technique
 
@@ -106,8 +102,8 @@ Exemple :
 DJANGO_SECRET_KEY=your-secret-key
 DJANGO_DEBUG=True
 
-6. Installation et exécution locale
-6.1 Prérequis
+##**6. Installation et exécution locale**
+##**6.1 Prérequis**
   Python 3.x
   Virtual environment (venv)
 
